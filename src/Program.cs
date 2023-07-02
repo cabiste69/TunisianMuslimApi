@@ -1,4 +1,5 @@
-using Microsoft.VisualBasic;
+using TunisianMuslimApi.Services;
+using TunisianMuslimApi.V1;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<INimServices, NimServices>();
 
 var app = builder.Build();
 
@@ -24,8 +27,6 @@ app.UseSwaggerUI(options =>
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-
-app.MapControllers();
+app.MapV1();
 
 app.Run();
