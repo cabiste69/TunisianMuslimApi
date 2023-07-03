@@ -12,6 +12,167 @@ html {
 
 body {
     margin: 0;
-    background: #1f1f1f;
-    color: #fafafa;
+    background: #1b1b1b;
+    /* background: black; */
+}
+
+span {
+    color: white;
+}
+
+.title {
+    color: white;
+}
+
+.swagger-ui .opblock .opblock-section-header {
+    align-items: center;
+    background: rgb(31, 31, 31);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    display: flex;
+    min-height: 50px;
+    padding: 8px 20px
+}
+
+.swagger-ui .info .title {
+    color: white;
+    font-family: sans-serif;
+    font-size: 36px;
+    margin: 0
+}
+
+/* For the <hr> bellow the controller's name */
+.swagger-ui .opblock-tag {
+    align-items: center;
+    border-bottom: 1px solid rgba(59, 65, 81, .3);
+    cursor: pointer;
+    display: flex;
+    padding: 10px 20px 10px 10px;
+    transition: all .2s
+}
+
+/* credits to https://stackoverflow.com/a/53336754 */
+svg {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(75deg) brightness(104%) contrast(101%);
+}
+
+.swagger-ui .btn {
+    background: transparent;
+    border: 2px solid green;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+    color: yellowgreen;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 5px 23px;
+    transition: all .3s
+}
+
+.swagger-ui table thead tr th {
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 0;
+    text-align: left
+}
+
+.swagger-ui .parameter__name {
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: .75em
+}
+
+.swagger-ui .parameter__type {
+    color: rgba(255, 255, 255, .3);
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 0
+}
+
+.swagger-ui .opblock .opblock-section-header h4 {
+    color: white;
+    flex: 1;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0
+}
+
+.swagger-ui .responses-inner h4,
+.swagger-ui .responses-inner h5 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 10px 0 5px
+}
+
+.swagger-ui .response-col_status {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px
+}
+
+.swagger-ui .response-col_status .response-undocumented {
+    color: red;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: 600
+}
+
+.swagger-ui table thead tr td,
+.swagger-ui table thead tr th {
+    border-bottom: 1px solid rgba(59, 65, 81, .2);
+    color: white;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 12px 0;
+    text-align: left
+}
+
+.swagger-ui .response-col_links {
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+    max-width: 40em;
+    padding-left: 2em
+}
+
+.swagger-ui .response-col_links .response-undocumented {
+    color: red;
+    font-family: monospace;
+    font-size: 11px;
+    font-weight: 600
+}
+
+.swagger-ui .opblock-description-wrapper,
+.swagger-ui .opblock-external-docs-wrapper,
+.swagger-ui .opblock-title_normal {
+    color: red;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0 0 5px;
+    padding: 15px 20px
+}
+
+.swagger-ui .opblock-description-wrapper h4,
+.swagger-ui .opblock-external-docs-wrapper h4,
+.swagger-ui .opblock-title_normal h4 {
+    color: yellow;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin: 0 0 5px
+}
+
+.swagger-ui .opblock-description-wrapper p,
+.swagger-ui .opblock-external-docs-wrapper p,
+.swagger-ui .opblock-title_normal p {
+    color: grey;
+    font-family: sans-serif;
+    font-size: 14px;
+    margin: 0
 }

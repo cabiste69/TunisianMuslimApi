@@ -21,8 +21,9 @@ app.UseSwaggerUI(options =>
     options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
     // serves the swagger UI at the app's root (url.com/index.html)
     options.RoutePrefix = string.Empty;
-    //todo: why is it not workingg :(
-    options.InjectStylesheet("/Assets/Swagger/custom.css");
+    //todo: why is it not working :(
+    //todo: make it work without uploading it to discord LOL
+    options.InjectStylesheet("https://raw.githubusercontent.com/cabiste69/TunisianMuslimApi/master/src/Assets/Swagger/custom.css");
 });
 
 app.UseHttpsRedirection();
